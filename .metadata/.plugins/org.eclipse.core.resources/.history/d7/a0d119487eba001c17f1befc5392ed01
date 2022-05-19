@@ -1,0 +1,46 @@
+package com.dell.simplilearn.phaseone;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class DataStructures {
+
+	public static void main(String[] args) {
+		// 1D array
+		// int arr[size] = new int[5]
+		
+		
+		int myArray[] = new int[5];
+		
+		int my2D[][] = new int[5][5];
+		
+		// 2D =====>>>>> 1D on storage
+		
+		
+		// a[m][n]
+		// Row major ordering = Address(a[i][j]) = (i * n + j) * size 
+		
+		
+		// Column major ordering
+		
+		// ArrayList
+		
+		
+		List<String> list = new ArrayList<String>();
+		
+		list.add("Mangod");
+		list.add("Apple");
+		
+		Collections.sort(list);
+		
+		
+		for (String fruit: list) {
+			System.out.println(fruit);
+		}
+		
+		
+		
+	}
+
+}

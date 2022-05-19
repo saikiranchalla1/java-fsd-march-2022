@@ -1,0 +1,118 @@
+package com.dell.simplilearn.phaseone;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+
+public class DataStructures {
+
+	public static void main(String[] args) {
+		// 1D array
+		// int arr[size] = new int[5]
+		
+		
+		int myArray[] = new int[5];
+		
+		int my2D[][] = new int[5][5];
+		
+		// 2D =====>>>>> 1D on storage
+		
+		
+		// a[m][n]
+		// Row major ordering = Address(a[i][j]) = (i * n + j) * size 
+		
+		
+		// Column major ordering
+		
+		// ArrayList
+		
+		
+		List<String> list = new ArrayList<String>();
+		
+		list.add("Mangod");
+		list.add("Apple");
+		
+		Collections.sort(list);
+		
+		
+		for (String fruit: list) {
+			System.out.println(fruit);
+		}
+		
+		System.out.println(list.get(0));
+		
+		
+		list.add(0, "Grape");
+		
+		
+		
+		
+		LLNode head = new LLNode(1, new LLNode(2, new LLNode(3, new LLNode(4, null))));
+		
+		
+		while (head != null) {
+			System.out.println(head.data);
+			head = head.next;
+		}
+		
+		
+		LinkedList<String> al = new LinkedList<String>();
+		
+		al.add("a");
+		al.add("b");
+		al.add("c");
+		al.add("c");
+		al.add("c");
+		al.add("c");
+		al.add("c");
+		al.add("c");
+		
+		
+		for (String string : al) {
+			System.out.println(string);
+		}
+		
+		al.addFirst("0");
+		
+		al.addLast("10");
+		
+		Set<String> hashSet = new HashSet<String>();
+		
+		hashSet.add("a");
+		hashSet.add("b");
+		hashSet.add("b");
+		hashSet.add("b");
+		hashSet.add("b");
+		
+		
+		for (String string : hashSet) {
+			System.out.println(string);
+		}
+		
+		
+		
+		
+		
+	}
+
+}
+
+class LLNode {
+	int data;
+	LLNode next;
+	
+	
+	public LLNode() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public LLNode(int data, LLNode next) {
+		this.data = data;
+		this.next = next;
+	}
+}

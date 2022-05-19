@@ -1,0 +1,11 @@
+package com.dell.simplilearn.phaseone;
+
+public class DataStructures {
+
+	public static void main(String[] args) {
+		// 1D array
+		
+		
+	}
+
+}

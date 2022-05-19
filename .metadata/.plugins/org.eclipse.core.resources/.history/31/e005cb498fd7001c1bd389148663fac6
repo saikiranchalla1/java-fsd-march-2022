@@ -1,0 +1,6 @@
+package com.dell.simplilearn.springjdbc;
+
+public class EmployeeDAO {
+
+	private JdbcTemplate jdbcTemplate;
+}

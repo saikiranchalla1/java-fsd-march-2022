@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="address1" class = "com.dell.simplilearn.spring.Address">
+		<constructor-arg value="SLC"></constructor-arg>
+		<constructor-arg value="UT"></constructor-arg>
+		<constructor-arg value="USA"></constructor-arg>
+	</bean>
+
+   <bean id="e" class = "com.dell.simplilearn.spring.Employee">
+   		<!-- <constructor-arg value="Name"></constructor-arg>
+   		<constructor-arg value="100" type="int"></constructor-arg>
+   		
+   		<constructor-arg>
+   			<ref bean="address1"/>
+   		</constructor-arg> -->
+   		
+   		<property name="id">
+   			<value>20</value>
+   		</property>
+   		
+   		<property name="name">
+   			<value>Testing</value>
+   		</property>
+   		
+   		<property name="address">
+   			<ref bean="address1"/>
+   		</property>
+   		
+   </bean>
+   
+   <bean id="q" class="com.dell.simplilearn.spring.Question">
+   	<constructor-arg value="1111"></constructor-arg>
+   	<constructor-arg value="name"></constructor-arg>
+   	<constructor-arg>
+   		<list>
+   			<value>Answer 1</value>
+   			<value>Answer 2</value>
+   			<value>ANswer 3</value>
+   		</list>
+   	</constructor-arg>
+   </bean>
+
+
+	<bean id="b1" class="com.dell.simplilearn.spring.B"></bean>
+	<bean id="b2" class="com.dell.simplilearn.spring.B"></bean>
+	<bean id="a" class="com.dell.simplilearn.spring.A" autowire="byType"></bean>
+</beans>
+

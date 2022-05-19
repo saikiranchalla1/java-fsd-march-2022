@@ -1,0 +1,39 @@
+package com.dell.simplilearn.phaseone;
+
+public class DataTypes {
+	
+	
+	public static void main(String[] args) {
+		/**
+		 * 1. Primitive data types
+		 * 2. Non-primitive data types
+		 * 
+		 */
+		
+		// Primitive data types
+		boolean bool = true; //false <- Boolean
+		
+		
+		// 1
+		
+		byte a = 1;
+		
+		short s = 10000;
+		
+		int anInt = 10000;
+		
+		long aLong = 10000L;
+		
+		float aFloat = 3.14f;
+		double aDouble = 3.14;
+		
+		char aChar = 'a';
+		
+		
+		String aString = "Hello world!";
+		
+		// Non primitive data types - Classes, interfaces, arrays
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+	}
+}

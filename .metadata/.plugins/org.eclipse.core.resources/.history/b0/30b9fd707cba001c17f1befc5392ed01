@@ -1,0 +1,23 @@
+package com.dell.simplilearn.phaseone;
+
+public class DataStructures {
+
+	public static void main(String[] args) {
+		// 1D array
+		// int arr[size] = new int[5]
+		
+		
+		int myArray[] = new int[5];
+		
+		int my2D[][] = new int[5][5];
+		
+		// 2D =====>>>>> 1D on storage
+		
+		// Row major ordering
+		// Column major ordering
+		
+		
+		
+	}
+
+}

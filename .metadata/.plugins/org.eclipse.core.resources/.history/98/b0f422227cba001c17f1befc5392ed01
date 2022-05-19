@@ -1,0 +1,16 @@
+package com.dell.simplilearn.phaseone;
+
+public class DataStructures {
+
+	public static void main(String[] args) {
+		// 1D array
+		// int arr[size] = new int[5]
+		
+		
+		int myArray[] = new int[5];
+		
+		
+		
+	}
+
+}

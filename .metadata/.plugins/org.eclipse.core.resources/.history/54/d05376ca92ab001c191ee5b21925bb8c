@@ -1,0 +1,19 @@
+package com.dell.simplilearn.phaseone;
+
+public class DataTypes {
+	/**
+	 * 1. Primitive data types
+	 * 2. Non-primitive data types
+	 * 
+	 */
+	
+	// Primitive data types
+	Boolean bool = true; //false
+	byte a = 10;
+	
+	short s = 10000;
+	
+	int anInt = 10000;
+	
+	long aLong = 10000L;
+}
