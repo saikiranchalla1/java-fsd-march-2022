@@ -2,10 +2,25 @@ package com.dell.simplilearn.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+
+
+@Entity
 public class User {
 
+	@Id
+	@GeneratedValue
 	private Integer id;
+	
+	@Size(min = 5)
 	private String name;
+	
+	
+	@Past
 	private Date dob;
 	public User(Integer id, String name, Date dob) {
 		super();
